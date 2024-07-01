@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ex2</string>
+    <string name="profiletext">Profile</string>
+    <string name="settingstext">Settings</string>
+    <string name="mainscreentext">Main</string>
+    <string name="filmtext">Films</string>
+    <string name="reviewstext">Reviews</string>
+    <string name="promocode">Promocode</string>
+    <string name="yourpromocode">Your Promocode</string>
+    <string name="send">Send</string>
+</resources>

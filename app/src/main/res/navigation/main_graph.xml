@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ru.itis.summer24.ex2.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_promocodeFragment"
+            app:destination="@id/promocodeFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ru.itis.summer24.ex2.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_filmsFragment"
+            app:destination="@id/filmsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="ru.itis.summer24.ex2.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/reviewsFragment"
+        android:name="ru.itis.summer24.ex2.ReviewsFragment"
+        android:label="ReviewsFragment"
+        tools:layout="@layout/fragment_reviews">
+        <action
+            android:id="@+id/action_reviewsFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmsFragment"
+        android:name="ru.itis.summer24.ex2.FilmsFragment"
+        android:label="fragment_reviews"
+        tools:layout="@layout/fragment_reviews" >
+        <action
+            android:id="@+id/action_filmsFragment_to_reviewsFragment"
+            app:destination="@id/reviewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/promocodeFragment"
+        android:name="ru.itis.summer24.ex2.PromocodeFragment"
+        android:label="fragment_promocode"
+        tools:layout="@layout/fragment_promocode" />
+</navigation>

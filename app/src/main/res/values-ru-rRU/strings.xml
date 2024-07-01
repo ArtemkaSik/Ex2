@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ex2</string>
+    <string name="profiletext">Профиль</string>
+    <string name="settingstext">Настройки</string>
+    <string name="mainscreentext">Главный экран</string>
+    <string name="filmtext">Фильмы</string>
+    <string name="reviewstext">Отзывы</string>
+    <string name="promocode">Промокод</string>
+    <string name="yourpromocode">Ваш промокод:</string>
+    <string name="send">Отправить</string>
+</resources>
