@@ -52,10 +52,22 @@
         <action
             android:id="@+id/action_filmsFragment_to_reviewsFragment"
             app:destination="@id/reviewsFragment" />
+        <action
+            android:id="@+id/action_filmsFragment_to_screenFilmFragment"
+            app:destination="@id/screenFilmFragment" />
     </fragment>
     <fragment
         android:id="@+id/promocodeFragment"
         android:name="ru.itis.summer24.ex2.PromocodeFragment"
         android:label="fragment_promocode"
         tools:layout="@layout/fragment_promocode" />
+    <fragment
+        android:id="@+id/screenFilmFragment"
+        android:name="ru.itis.summer24.ex2.ScreenFilmFragment"
+        android:label="fragment_screen_film"
+        tools:layout="@layout/fragment_screen_film" >
+        <action
+            android:id="@+id/action_screenFilmFragment_to_filmsFragment"
+            app:destination="@id/filmsFragment" />
+    </fragment>
 </navigation>

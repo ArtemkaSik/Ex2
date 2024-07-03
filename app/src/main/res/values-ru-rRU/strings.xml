@@ -9,4 +9,5 @@
     <string name="promocode">Промокод</string>
     <string name="yourpromocode">Ваш промокод:</string>
     <string name="send">Отправить</string>
+    <string name="back">Назад</string>
 </resources>
